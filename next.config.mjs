@@ -7,8 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable image optimization for static hosting
   },
-  basePath: "/signal3", // Replace with your GitHub repository name
-  assetPrefix: "/signal3", // Ensure assets are loaded correctly
+  basePath: "/signal-light", // Replace with your GitHub repository name
+  assetPrefix: "/signal-light", // Ensure assets are loaded correctly
 };
 
 export default nextConfig;

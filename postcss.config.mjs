@@ -1,8 +1,12 @@
-/** @type {import('postcss-load-config').Config} */
+/** @type {import('next').NextConfig} */
 const config = {
   plugins: {
     tailwindcss: {},
   },
+  output: 'export',
+  images: {
+    unoptimized: true, // Optional: For GitHub Pages or other static hosting
+  }
 };
 
-export default config;
+module.exports = nextConfig;

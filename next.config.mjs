@@ -8,6 +8,7 @@ const nextConfig = {
     unoptimized: true, // Disable image optimization for static hosting
   },
   basePath: "/signal-light",
+  assetPrefix: '/signal-light', 
 };
 
 

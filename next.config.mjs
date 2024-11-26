@@ -9,6 +9,7 @@ const nextConfig = {
   },
   assetPrefix: './', // Use relative paths for static resources
   basePath: '',
+  purge: false
 };
 
 

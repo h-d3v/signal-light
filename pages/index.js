@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import CountUp from "react-countup";
+import '../styles/global.css';
 
 export default function Home() {
   return (

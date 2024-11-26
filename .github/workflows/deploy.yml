@@ -1,29 +1,29 @@
-name: Deploy to GitHub Pages
+# name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches:
-      - master # Replace with the branch you want to trigger the deployment
+# on:
+#   push:
+#     branches:
+#       - master # Replace with the branch you want to trigger the deployment
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
+#     permissions:
+#       contents: write
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+#       - name: Install dependencies
+#         run: npm install --legacy-peer-deps
 
-      - name: Build Next.js app
-        run: npm run build # Builds the app and generates the static files in 'out/'
+#       - name: Build Next.js app
+#         run: npm run build # Builds the app and generates the static files in 'out/'
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # 'out/' directory is where static files are located
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./ # 'out/' directory is where static files are located

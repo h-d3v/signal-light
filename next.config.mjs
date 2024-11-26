@@ -8,8 +8,7 @@ const nextConfig = {
     unoptimized: true, // Disable image optimization for static hosting
   },
   assetPrefix: './', // Use relative paths for static resources
-  basePath: '',
-  purge: false
+  basePath: ''
 };
 
 

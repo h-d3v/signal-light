@@ -7,8 +7,12 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable image optimization for static hosting
   },
-  basePath: "/signal-light",
-  assetPrefix: '/signal-light', 
+  experimental: {
+    turbopack: true, // Explicitly enable Turbopack experimental support
+  },
+  assetPrefix: './', // Use relative paths for static resources
+  basePath: '',
 };
 
-module.exports = nextConfig;
+
+export default nextConfig;

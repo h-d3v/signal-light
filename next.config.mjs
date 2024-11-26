@@ -7,11 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable image optimization for static hosting
   },
-  experimental: {
-    turbopack: true, // Explicitly enable Turbopack experimental support
-  },
-  assetPrefix: './', // Use relative paths for static resources
-  basePath: '',
+  assetPrefix: '/signal-light', // Use relative paths for static resources
+  basePath: '/signal-light',
 };
 
 

@@ -10,4 +10,5 @@ const nextConfig = {
   basePath: "/signal-light",
 };
 
-export default nextConfig;
+
+module.exports = nextConfig;

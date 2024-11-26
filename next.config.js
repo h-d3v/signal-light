@@ -11,5 +11,4 @@ const nextConfig = {
   assetPrefix: '/signal-light', 
 };
 
-
-export default nextConfig;
+module.exports = nextConfig;

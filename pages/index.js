@@ -154,24 +154,24 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font relative">
-        <div class="container px-5 pt-24 pb-16 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-5xl text-2xl font-semibold title-font mb-4 text-white">
+      <section className="text-gray-600 body-font relative">
+        <div className="container px-5 pt-24 pb-16 mx-auto">
+          <div className="flex flex-col text-center w-full mb-12">
+            <h1 className="sm:text-5xl text-2xl font-semibold title-font mb-4 text-white">
               Contact Us
             </h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base font-semibold">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-semibold">
               Contact us if you have any issues with the website or just want to
               ask a question!
             </p>
           </div>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
+          <div className="lg:w-1/2 md:w-2/3 mx-auto">
+            <div className="flex flex-wrap -m-2">
+              <div className="p-2 w-1/2">
+                <div className="relative">
                   <label
                     htmlFor="name"
-                    class="leading-7 text-sm text-white font-semibold"
+                    className="leading-7 text-sm text-white font-semibold"
                   >
                     Name
                   </label>
@@ -179,15 +179,15 @@ export default function Home() {
                     type="text"
                     id="name"
                     name="name"
-                    class="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   ></input>
                 </div>
               </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
+              <div className="p-2 w-1/2">
+                <div className="relative">
                   <label
                     htmlFor="email"
-                    class="leading-7 text-sm text-white font-semibold"
+                    className="leading-7 text-sm text-white font-semibold"
                   >
                     Email
                   </label>
@@ -195,33 +195,33 @@ export default function Home() {
                     type="email"
                     id="email"
                     name="email"
-                    class="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   ></input>
                 </div>
               </div>
-              <div class="p-2 w-full">
-                <div class="relative">
+              <div className="p-2 w-full">
+                <div className="relative">
                   <label
                     htmlFor="message"
-                    class="leading-7 text-sm text-white font-semibold"
+                    className="leading-7 text-sm text-white font-semibold"
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    class="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
-              <div class="p-2 w-full">
-                <button class="flex mx-auto text-black bg-white border-0 py-2 px-8 rounded text-lg">
+              <div className="p-2 w-full">
+                <button className="flex mx-auto text-black bg-white border-0 py-2 px-8 rounded text-lg">
                   Send
                 </button>
               </div>
-              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a class="text-indigo-500">contact@website.com</a>
-                <p class="leading-normal my-5">
+              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a className="text-indigo-500">contact@website.com</a>
+                <p className="leading-normal my-5">
                   Mountain View, CalihtmlFornia, United States
                 </p>
               </div>

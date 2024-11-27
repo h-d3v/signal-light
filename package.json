@@ -1,6 +1,7 @@
 {
   "name": "signal-light",
   "version": "0.1.0",
+  "homepage": "https://h-d3v.github.io/signal-light",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

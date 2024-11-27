@@ -4,6 +4,6 @@ module.exports = {
   images: {
     unoptimized: true, // Disable image optimization for static hosting
   },
-  assetPrefix: '.', // Use relative paths for static resources
-  basePath: '', 
+  assetPrefix: '/signal-light', // Use relative paths for static resources
+  basePath: '/signall-light', 
 };

@@ -1,22 +1,24 @@
 "use client";
 import Image from "next/image";
 import CountUp from "react-countup";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <section className="text-black body-font lg:pt-20">
-      <div className="container px-5 pt-32 mx-auto lg:px-4 lg:py-4">
+      <Header />
+      <div className="container px-5 pt-40 mx-auto lg:px-4 lg:py-4">
         <div className="flex flex-col w-full mb-2 text-left md:text-center ">
-          <h1 className="mb-2 text-6xl font-bold tracking-tighter text-white lg:text-8xl md:text-7xl">
-            <span>Signal Light</span>
+          <h1 className="mb-2 text-6xl font-bold tracking-tighter lg:text-8xl md:text-7xl">
+            <span>Air Traffic Control </span>
             <br className="hidden lg:block"></br>
-            Air Traffic Gun
+            Signal Light Gun
           </h1>
           <br></br>
-          <p className="mx-auto  text-xl font-normal leading-relaxed text-gray-600 dark:text-gray-300 lg:w-2/3">
+          <p className="mx-auto  text-xl font-normal leading-relaxed  lg:w-2/3">
             The NEW 902 LED signal light gun combined with the NEW model 952
             charger are the latest addition to our line of products delivering
-            exceptional quality and perhtmlFormance.
+            exceptional quality and performance.
           </p>
         </div>
       </div>
@@ -29,8 +31,9 @@ export default function Home() {
           src="/images/signal_light_hero_image.jpg"
         ></Image>
       </div> */}
-      <section className="text-gray-600 body-font">
-        <section className="text-gray-600 body-font">
+      <section className="body-font">
+        {/* REMOVING COUNT SECTION
+         <section className="text-gray-600 body-font">
           <div className="container px-5 py-10 mx-auto">
             <div className="flex flex-wrap -m-4 text-center">
               <div className="p-4 sm:w-1/3 w-1/2">
@@ -78,14 +81,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           {/* Image Section */}
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img
               alt="Signal Light Gun"
               className="object-cover object-center h-full w-full"
-              src="./images/signal_gun.png" // Replace with the actual path to the gun image
+              src="./images/signal_gun.jpg" // Replace with the actual path to the gun image
             />
           </div>
 
@@ -94,14 +97,14 @@ export default function Home() {
             {/* Signal Light Gun Features */}
             <div className="flex flex-col mb-10 lg:items-start items-center">
               <div className="flex-grow">
-                <h2 className="text-white text-2xl title-font font-medium mb-3">
+                <h2 className=" text-2xl title-font font-medium mb-3">
                   Signal Light Gun Model 902
                 </h2>
-                <p className=" text-gray-200 leading-relaxed text-lg mb-4">
-                  Exceptional perhtmlFormance and quality with upgraded technology,
+                <p className=" leading-relaxed text-lg mb-4">
+                  Exceptional performance and quality with upgraded technology,
                   greater range of visibility, and a portable, ergonomic design.
                 </p>
-                <ul className="text-gray-200 list-disc ml-5 text-lg">
+                <ul className=" list-disc ml-5 text-lg">
                   <li>
                     Visibility Range: Over 8km (4nm) in clear daytime conditions
                   </li>
@@ -123,7 +126,7 @@ export default function Home() {
               <img
                 alt="Signal Light Gun"
                 className="object-cover object-center h-full w-full"
-                src="./images/charger.png" // Replace with the actual path to the gun image
+                src="./images/charger.jpg" // Replace with the actual path to the gun image
               />
             </div>
             {/* Description Section */}
@@ -131,14 +134,14 @@ export default function Home() {
             {/* Charger Features */}
             <div className="flex flex-col mb-10 lg:items-start items-center">
               <div className="flex-grow">
-                <h2 className="text-white text-2xl title-font font-medium mb-3">
+                <h2 className="text-2xl title-font font-medium mb-3">
                   Charger Model 952C
                 </h2>
-                <p className="text-gray-200 leading-relaxed text-lg mb-4">
+                <p className="leading-relaxed text-lg mb-4">
                   Efficient charging with microcontroller control htmlFor
                   sustainable Ni-MH batteries.
                 </p>
-                <ul className="text-gray-200 list-disc ml-5 text-lg">
+                <ul className=" list-disc ml-5 text-lg">
                   <li>Power Input: 100-240 VAC, 50-60 Hz, 1.5A</li>
                   <li>Power Output: 24V, 2.55A</li>
                   <li>Charge Time: Approximately 2 hours</li>
@@ -154,21 +157,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-gray-600 body-font relative">
+      <section className="body-font relative" id="contact">
         <div className="container px-5 pt-24 pb-16 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-5xl text-2xl font-semibold title-font mb-4 text-white">
+            <h1 className="sm:text-5xl text-2xl font-semibold title-font mb-4 ">
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-semibold">
-              Contact us if you have any issues with the website or just want to
-              ask a question!
+              Contact us for additional information or quotation
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
-                <div className="relative">
+              {/* <div className="p-2 w-1/2">
+                 <div className="relative">
                   <label
                     htmlFor="name"
                     className="leading-7 text-sm text-white font-semibold"
@@ -210,7 +212,7 @@ export default function Home() {
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
@@ -218,11 +220,11 @@ export default function Home() {
                 <button className="flex mx-auto text-black bg-white border-0 py-2 px-8 rounded text-lg">
                   Send
                 </button>
-              </div>
+              </div> */}
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-indigo-500">contact@website.com</a>
+                <a className="">info@atiavionics.com</a>
                 <p className="leading-normal my-5">
-                  Mountain View, CalihtmlFornia, United States
+                  Laval, Quebec, Canada
                 </p>
               </div>
             </div>

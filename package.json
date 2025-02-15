@@ -4,10 +4,11 @@
   "homepage": "https://h-d3v.github.io/signal-light",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next build && npx serve@latest out",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && npx gh-pages -d out -t true"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
